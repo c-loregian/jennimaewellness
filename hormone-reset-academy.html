@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Hormone Reset Academy — Jenni Mae Wellness</title>
+<title>The Hormone Reset Academy | Jenni Mae Wellness</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -310,6 +310,109 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
+  /* Scarcity banner */
+  .scarcity-banner {
+    background: var(--blush);
+    border: 1px solid rgba(201, 123, 107, 0.25);
+    border-radius: 12px;
+    padding: 14px 20px;
+    text-align: center;
+    margin-bottom: 52px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.1s forwards;
+  }
+
+  .scarcity-banner p {
+    font-size: 13px;
+    color: var(--deep-rose);
+    line-height: 1.5;
+  }
+
+  .scarcity-banner strong {
+    font-weight: 500;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.3s forwards;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+  }
+
+  .testimonial-card:last-child { margin-bottom: 0; }
+
+  .testimonial-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .testimonial-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--blush);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--rose);
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .testimonial-name {
+    font-size: 12px;
+    color: var(--text-light);
+    letter-spacing: 0.04em;
+  }
+
+  /* FAQ */
+  .faq {
+    opacity: 0;
+    animation: fadeUp 0.8s ease 0.4s forwards;
+    margin-bottom: 40px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+
+  .faq-item:first-child { padding-top: 0; }
+  .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .faq-question {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-mid);
+  }
+
   /* Mobile */
   @media (max-width: 480px) {
     .container { padding: 48px 20px 60px; }
@@ -326,6 +429,11 @@
     <div class="brand">Jenni Mae Wellness</div>
     <h1 class="headline">You're in the<br><em>right place.</em> <span class="heart">🤍</span></h1>
     <p class="subhead">The Hormone Reset Academy starts <strong>22nd April</strong> and you're about to secure your spot.</p>
+  </div>
+
+  <!-- Scarcity banner -->
+  <div class="scarcity-banner">
+    <p>This cohort opens <strong>22nd April</strong> and is limited to <strong>5 women only.</strong><br>Applications close once spots are filled.</p>
   </div>
 
   <!-- Divider -->
@@ -390,7 +498,7 @@
         <div>
           <div class="bonus-item">
             <div class="bonus-tag">Bonus</div>
-            <div>The Hormone Kitchen — 11+ hormone-supporting delicious recipes</div>
+            <div>The Hormone Kitchen: 11+ hormone-supporting delicious recipes</div>
           </div>
         </div>
       </div>
@@ -420,6 +528,71 @@
   <div class="reassurance">
     You'll receive a confirmation email with everything you need.<br>
     No prep required, just show up ready to understand your body. <span class="heart">🤍</span>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <div class="section-label">What women are saying</div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"Finally I understand what's going on inside my body! The content makes it all so easy to understand and implement. Feeling so much better already and it's only been a couple of weeks, thankyou!!!"</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">M</div>
+        <div class="testimonial-name">Maisie</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"I tried so many different things from insta or tiktok and nothing ever worked. This is the first time I actually get the why behind it all. I'm so grateful I found this!"</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">A</div>
+        <div class="testimonial-name">Alex</div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"Two months after my PCOS diagnosis I decided to take matters into my own hands instead of going straight into taking the pill. I'm so glad I did because my symptoms have already massively reduced and I feel better than I have for months."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">C</div>
+        <div class="testimonial-name">Chloe, PCOS</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <div class="section-label">Common questions</div>
+
+    <div class="faq-item">
+      <div class="faq-question">I've tried so many things before and nothing has worked. How is this different?</div>
+      <div class="faq-answer">Most approaches treat the symptoms: a new diet, a supplement, a pill. This is about understanding the root cause of what's driving your symptoms, so that everything else you do actually makes sense and sticks. You're not starting another plan. You're finally getting the education your body has needed.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I don't know where to start. Is this suitable for a complete beginner?</div>
+      <div class="faq-answer">Yes, completely. The academy is built from the ground up, starting with the fundamentals of your cycle and hormones before anything else. If you've ever felt overwhelmed by conflicting information online, this gives you one clear, structured place to start.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I have PCOS / endometriosis / fibroids. Is this relevant for me?</div>
+      <div class="faq-answer">Absolutely. Hormone-related conditions like PCOS, endometriosis, adenomyosis and fibroids are covered directly in the curriculum. You'll understand how these conditions develop, what's driving them in your body, and what you can actually do to support yourself.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">My doctor says everything looks normal but I still feel terrible. Can this help?</div>
+      <div class="faq-answer">This is one of the most common experiences in Jenni's community. Standard blood tests don't always capture the full picture of hormonal health. This academy fills the gap between "your results are normal" and actually feeling well. Your symptoms are real, even when labs don't show it.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">I'm really busy. How much time does this require?</div>
+      <div class="faq-answer">The modules are pre-recorded so you learn completely at your own pace, with no pressure to keep up. The live weekly Q&A is the only scheduled element, and even that is there to support you, not stress you out. This is built for real life.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">When does it start and what happens after I pay?</div>
+      <div class="faq-answer">The cohort opens 22nd April. Once you secure your spot you'll receive a confirmation email with everything you need to know. No prep required, just show up ready to learn.</div>
+    </div>
+
   </div>
 
   <!-- Disclaimer -->
